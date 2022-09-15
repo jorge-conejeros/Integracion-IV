@@ -1,0 +1,26 @@
+.carousel {
+    width:740px;
+    height:460px;
+    margin: auto;
+}
+
+.nav-pills .nav-link.active {
+    background-color: #0008B6!important;
+}
+
+.nav-pills > li > a:hover {
+    color: #ffffff !important;
+}
+
+.nav-link-color {
+    color: black !important;
+}
+
+.nav-item{
+  color: white;
+}
+
+.md-form{
+  text-align: center;
+}
+
