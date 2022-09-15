@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portal Estudiantil UCT</title>
+    <link rel="icon" href="img/Logo_UCT.webp">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    
+    <nav class="navbar navbar-expand-lg" style="background-color: #e3f2fd;">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="img/Logo_UCT.webp" alt="Logo" width="30" height="30" class="d-inline-block align-text-top">
+          UCT
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+            <a class="nav-link" href="#">Calendario</a>
+            <a class="nav-link" href="#">DGE</a>
+            <a class="nav-link" href="#">DAAS</a>
+            
+            <div>
+              <a href="" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#signinPage"> Inicia Sesion <i class="fas fa-sign-in-alt ml-3"></i></a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </nav>
+    <nav>
+      
+    </nav>
+  </head>
+
+  <body class="bg-primary bg-gradient">
+    
+    <div class="modal fade" id="signinPage">
+      <div class="modal-dialog">
+        <div class="modal-content">
+
+          <div class="modal-header text-center">
+            <h3 class="modal-tittle text-center w-100 font-weight-bold"> Inicia Sesion</h3>
+            <button type="button" class="close" data-dismiss="modal" aria-label="close">&times;</button>
+          </div>
+
+          <div class="modal-body mx-4">
+            <div class="md-form">
+              <input type="name" class="form-control validate">
+              <label data-error="wrong" data-succes="right"> RUT</label>
+            </div>
+          </div>
+
+          <div class="md-form">
+            <input type="name" class="form-control validate">
+            <label data-error="wrong" data-succes="right"> Password </label>
+            <p class="font-small blue-text d-flex justify-content-center"> forgot <a href="#" class="blue-text ml-1"> Password?</a></p>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+    
+    
+    
+    
+    <div class="container">
+      <h1 class="fw-light text-center text-light">Bienvenido al Portal Estudiantil UCT</h1>
+    </div>
+ 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+  <div class="container">
+    
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true" >
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner" >
+        <div class="carousel-item active" data-bs-interval="5000">
+          <img src="img/BANNER_CHARLAS-23.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item" data-bs-interval="5000">
+          <img src="img/BANNER_CHARLAS-24.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item" data-bs-interval="5000">
+          <img src="img/banners_720x360-23.png" class="d-block w-100" alt="...">
+        </div>
+      </div>
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+
+
+
+<div class="container">
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+      
+      <div class="col">
+        <div class="card shadow-sm">
+          <img src="img/tarjetas/galeria.jpg" class="card-img-top" alt="galeria">
+         
+          <div class="card-body">
+            <p class="card-text">Galeria de arte de la universidad catolica de temuco.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div>
+                <button type="button" class="btn btn-sm btn-outline-secondary">Ver</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col">
+        <div class="card shadow-sm">
+         <img src="img/tarjetas/credito.jpg" alt="credito" class="card-img-top">
+          <div class="card-body">
+            <p class="card-text"> Credito y Recaudacion</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div>
+                <button type="button" class="btn btn-sm btn-outline-secondary">Ver</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card shadow-sm">
+          <img src="img/tarjetas/repositorio.png" alt="repositorio" class="card-img-top">
+
+          <div class="card-body">
+            <p class="card-text">repositorio digital</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div>
+                <button type="button" class="btn btn-sm btn-outline-secondary">Ver</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card shadow-sm">
+         <img src="img/tarjetas/libro.jpg" alt="libreria" class="card-img-top">
+
+          <div class="card-body">
+            <p class="card-text">Libreria y prestamos de libros</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div>
+                <button type="button" class="btn btn-sm btn-outline-secondary">Ver</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card shadow-sm">
+          <img src="img/tarjetas/trabaja.png" alt="trabaja" class="card-img-top">
+          <div class="card-body">
+            <p class="card-text">Trabaja con nosotros</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div>
+                <button type="button" class="btn btn-sm btn-outline-secondary">Ver</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card" >
+          <img src="img/tarjetas/cruz.jpg" alt="cruz" class="card-img-top">
+          <div class="card-body">
+            <p class="card-text">Pastoral Universitaria</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div>
+                <button type="button" class="btn btn-sm btn-outline-secondary">Ver</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  
+  <div class="container">
+    <footer class="py-3 my-4">
+      <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-light">Contacto</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-light">Preguntas</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-light">Direcciones</a></li>
+      </ul>
+      <p class="text-center text-light">© 2022 UCT</p>
+    </footer>
+  </div>
+
+</body>
+</html>
