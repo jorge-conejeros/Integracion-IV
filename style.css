@@ -1,0 +1,30 @@
+body{
+    background-color: cornflowerblue;
+} 
+:root {
+    --primary: #111B54;
+    --light: #ffffff;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+.bg-primary { background-color: var(--primary) !important; }
+
+.bg-light { background-color: var(--light) !important; }
+
+#sidebar-container {
+    top: 30%;
+    min-height: 100vh;
+    max-width: 30vh;
+}
+  
+#sidebar-container .logo{
+    padding: 0.875rem 1.25rem;
+}
+  
+#sidebar-container .menu {
+    width: 18rem;
+}
