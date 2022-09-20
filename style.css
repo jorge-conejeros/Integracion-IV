@@ -1,26 +1,18 @@
 .carousel {
-    width:740px;
-    height:460px;
-    margin: auto;
+  width:740px;
+  height:460px;
+  margin: auto;
 }
 
-.nav-pills .nav-link.active {
-    background-color: #0008B6!important;
+#loginHeader {
+  background-color: rgb(235, 227, 212);
 }
 
-.nav-pills > li > a:hover {
-    color: #ffffff !important;
+#formBody {
+  margin: auto;
+  border-bottom: auto;
 }
 
-.nav-link-color {
-    color: black !important;
+#loginBtn {
+  margin-top: 10px;
 }
-
-.nav-item{
-  color: white;
-}
-
-.md-form{
-  text-align: center;
-}
-

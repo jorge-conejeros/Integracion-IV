@@ -26,7 +26,7 @@
             <a class="nav-link" href="https://dara.uct.cl" target="_blank">DARA</a>
             
             <div>
-              <a href="" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#signinPage"> Inicia Sesion <i class="fas fa-sign-in-alt ml-3"></i></a>
+              <a href="" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#signinPage"> Inicia Sesion </a>
             </div>
 
           </div>
@@ -44,12 +44,12 @@
       <div class="modal-dialog">
         <div class="modal-content">
 
-          <div class="modal-header text-center">
+          <div class="modal-header text-center" id="loginHeader">
             <h3 class="modal-tittle text-center w-100 font-weight-bold"> Inicia Sesión</h3>
             <button type="button" class="close" data-bs-dismiss="modal">&times;</button>
           </div>
 
-          <form class="row justify-content-sm-center">
+          <form class="row justify-content-sm-center bg-primary" id="formBody">
             <div class="form-group text-center col-sm-8">
               <label>Rut</label>
               <input type="rut" class="form-control text-center" placeholder="Ej: 123456793">
@@ -58,11 +58,11 @@
               <label>Contraseña</label>
               <input type="password" class="form-control text-center" placeholder="************">
             </div>
-            <div class="text-center">
-            <button type="submit" class="btn btn-primary">Entrar</button>
+            <div class="text-center" id="loginBtn">
+            <button type="submit" class="btn btn-light">Entrar</button>
             </div>
             <div class="text-center">
-              <a href="#" class="blue-text ml-1"><br> ¿Olvidó su Contraseña? </a>
+              <a href="#" class="bg-light"><br> ¿Olvidó su Contraseña? </a>
             </div>
           </form>
 
@@ -114,11 +114,11 @@
 
 
 <div class="container">
-    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+    <div class="row row-cols-md-3 g-3">
       
       <div class="col">
         <div class="card shadow-sm">
-          <img src="img/tarjetas/galeria.jpg" class="card-img-top" alt="galeria" height="300">
+          <img src="img/tarjetas/galeria.jpg" class="card-img-top" alt="galeria" height="247">
          
           <div class="card-body">
             <p class="card-text">Galeria de arte de la universidad catolica de temuco.</p>
@@ -135,7 +135,7 @@
       
       <div class="col">
         <div class="card shadow-sm">
-         <img src="img/tarjetas/credito.jpg" alt="credito" class="card-img-top" height="300">
+         <img src="img/tarjetas/credito.jpg" alt="credito" class="card-img-top" height="247">
           <div class="card-body">
             <p class="card-text"> Credito y Recaudacion</p>
             <div class="d-flex justify-content-between align-items-center">
@@ -150,7 +150,7 @@
       </div>
       <div class="col">
         <div class="card shadow-sm">
-          <img src="img/tarjetas/repositorio.png" alt="repositorio" class="card-img-top" height="300">
+          <img src="img/tarjetas/repositorio.png" alt="repositorio" class="card-img-top" height="247">
 
           <div class="card-body">
             <p class="card-text">Repositorio Digital</p>
@@ -167,7 +167,7 @@
 
       <div class="col">
         <div class="card shadow-sm">
-         <img src="img/tarjetas/libro.jpg" alt="libreria" class="card-img-top" height="300">
+         <img src="img/tarjetas/libro.jpg" alt="libreria" class="card-img-top" height="247">
 
           <div class="card-body">
             <p class="card-text">Bibliotecas</p>
@@ -183,7 +183,7 @@
       </div>
       <div class="col">
         <div class="card shadow-sm">
-          <img src="img/tarjetas/voluntariado.jpg" alt="trabaja" class="card-img-top" height="300">
+          <img src="img/tarjetas/voluntariado.jpg" alt="trabaja" class="card-img-top" height="247">
           <div class="card-body">
             <p class="card-text">Voluntariado UCT</p>
             <div class="d-flex justify-content-between align-items-center">
@@ -199,7 +199,7 @@
 
       <div class="col">
         <div class="card" >
-          <img src="img/tarjetas/cruz.jpg" alt="cruz" class="card-img-top" height="300">
+          <img src="img/tarjetas/cruz.jpg" alt="cruz" class="card-img-top" height="247">
           <div class="card-body">
             <p class="card-text">Pastoral Universitaria</p>
             <div class="d-flex justify-content-between align-items-center">
