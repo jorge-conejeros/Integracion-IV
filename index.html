@@ -26,7 +26,7 @@
             <a class="nav-link" href="https://dara.uct.cl" target="_blank">DARA</a>
             
             <div>
-              <a href="" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#signinPage"> Inicia Sesion <i class="fas fa-sign-in-alt ml-3"></i></a>
+              <a href="" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#signinPage"> Inicia Sesion <i class="fas fa-sign-in-alt ml-3"></i></a>
             </div>
 
           </div>
@@ -45,26 +45,26 @@
         <div class="modal-content">
 
           <div class="modal-header text-center">
-            <h3 class="modal-tittle text-center w-100 font-weight-bold"> Inicia Sesion</h3>
+            <h3 class="modal-tittle text-center w-100 font-weight-bold"> Inicia Sesión</h3>
             <button type="button" class="close" data-bs-dismiss="modal">&times;</button>
           </div>
 
-          <div class="modal-body mx-4">
-            <div class="md-form">
-              <input type="name" class="form-control validate">
-              <label data-error="wrong" data-succes="right"> RUT</label>
+          <form class="row justify-content-sm-center">
+            <div class="form-group text-center col-sm-8">
+              <label>Rut</label>
+              <input type="rut" class="form-control text-center" placeholder="Ej: 123456793">
             </div>
-          </div>
-
-
-          <div class="md-form">
-            <input type="name" class="form-control validate">
-            <label data-error="wrong" data-succes="right">Contraseña</label>
-            <div class="md-form-login">
-              <button type="submit" class="btn btn-success">Entrar</button>
+            <div class="form-group text-center col-sm-8">
+              <label>Contraseña</label>
+              <input type="password" class="form-control text-center" placeholder="************">
             </div>
-            <a href="#" class="blue-text ml-1 justify-content-center"><br> ¿Olvidó su Contraseña? </a>
-          </div>
+            <div class="text-center">
+            <button type="submit" class="btn btn-primary">Entrar</button>
+            </div>
+            <div class="text-center">
+              <a href="#" class="blue-text ml-1"><br> ¿Olvidó su Contraseña? </a>
+            </div>
+          </form>
 
         </div>
 
