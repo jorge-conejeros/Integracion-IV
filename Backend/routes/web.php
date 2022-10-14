@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\LoginController;
+use App\Http\Controllers\StudentController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,9 +13,4 @@ use App\Http\Controllers\LoginController;
 |
 */
 
-Route::get('/', function () {
-    return view('home');
-});
-
-Route::get('/',[LoginController::class,'show']);
-Route::post('login',[LoginController::class,'login']);
+Route::get('/',[StudentController::class,'home']);
