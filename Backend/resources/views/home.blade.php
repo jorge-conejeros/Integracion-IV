@@ -1,25 +1,22 @@
 <!DOCTYPE html>
 <head>
-    <title>Chato</title>
+    <title>Probando Cositas</title>
 </head>
 <body>
     <div>
-        <form method="POST" action="login">
-            @csrf
-            <table>
+        <table>
+            <tbody>
+                @foreach($datos as $s)
                 <tr>
-                    <td>Rut:</td>
-                    <td><input type="text" name="txtUsuario" placeholder="201234569"></td>
+                    <td>{{$s->Nombres}}</td>
+                    <td>{{$s->Apellidos}}</td>
+                    <td>{{$s->Carrera}}</td>
+                    <td>{{$s->Ramo}}</td>
+                    <td>{{$s->Día}}</td>
                 </tr>
-                <tr>
-                    <td>Contraseña:</td>
-                    <td><input type="password" name="txtClave"></td>
-                </tr>
-                <tr>
-                    <td colspan="2"><input type="submit" value="Ingresar"></td>
-                </tr>
-            </table>
-        </form>
+                @endforeach
+            </tbody>
+        </table>
     </div>
 </body>
 </html>
