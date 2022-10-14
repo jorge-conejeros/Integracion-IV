@@ -1,0 +1,18 @@
+.carousel {
+  width:740px;
+  height:460px;
+  margin: auto;
+}
+
+#loginHeader {
+  background-color: rgb(235, 227, 212);
+}
+
+#formBody {
+  margin: auto;
+  border-bottom: auto;
+}
+
+#loginBtn {
+  margin-top: 10px;
+}
