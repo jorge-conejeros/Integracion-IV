@@ -12,5 +12,3 @@ use App\Http\Controllers\StudentController;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
-Route::get('/',[StudentController::class,'home']);

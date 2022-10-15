@@ -5,9 +5,15 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 //  importar componenetes 
 import Home from './pages/Home';
 import Session from './pages/Session'
-import NavBar from './components/Navbar';
-import Login from './components/login'
-import Contenido from './components/Contenido';
+import axios from 'axios';
+
+
+axios.interceptors.request.use(function (config){
+  const token = localStorage.getItem('auth_token');
+  config.headers.Authorization = token ? `Bearer ${token}`: ``;
+  return config;
+
+});
 
 function App() {
   return (

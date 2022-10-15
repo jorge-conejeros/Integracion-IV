@@ -1,31 +1,77 @@
 import React, { useState } from 'react';
-import { MdLabelImportant } from 'react-icons/md'
+import { MdLabelImportant } from 'react-icons/md';
+import axios from 'axios';
+import { useNavigate } from 'react-router-dom';
 import '../Styles/Login.css'
+import Swal from 'sweetalert2'
+import withReactContent from 'sweetalert2-react-content'
 
+const endpoint ='http://127.0.0.1:8000/api';
 
-const Login = (props) => {
-  const [email, setEmail] = useState('');
-  const [pass, setPass] = useState('');
+const Login = () => {
+  const MySwal = withReactContent(Swal);
+  const navigate = useNavigate();
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log(email);
+  const [loginImput, setLogin] = useState({
+    rut : '',
+    password: '',
+    error_list: [],
+  });
+
+  const handleImput = (e) => {
+    e.persist();
+    setLogin({...loginImput, [e.target.name]:e.target.value});
   }
-  const [show, setShow] = useState(false);
 
-  const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
+  const loginSubmit = (e) => {
+    e.preventDefault();
+
+    const data = {
+      rut: loginImput.rut,
+      password: loginImput.password,
+    }
+      axios.post(`${endpoint}/login`, data).then(res => {
+        if (res.data.status === 200) 
+        {
+          localStorage.setItem('auth_token', res.data.token);
+          localStorage.setItem('auth_name', res.data.studentname);
+          MySwal.fire({
+            title: 'Success',
+            text: res.data.message,
+            icon: 'success',
+            confirmButtonText: 'OK'
+          });
+          navigate('/login');
+        }
+        else if (res.data.status === 401) 
+        {
+          //MySwal("Warning", res.data.message, "warning");
+          MySwal.fire({
+            title: 'Warning',
+            text: res.data.message,
+            icon: 'warning',
+            confirmButtonText: 'OK'
+          });
+        }
+        else 
+        {
+          setLogin({...loginImput, error_list: res.data.validation_errors});
+        }
+      });
+  }
 
   return (
     <>
     <div className='login'>
       <div className="auth-form-container">
         <h2>Iniciar Sesion</h2>
-        <form className="login-form" onSubmit={handleSubmit}>
+        <form className="login-form" onSubmit={loginSubmit}>
           <label htmlFor="rut">Rut</label>
-          <input value={email} onChange={(e) => setEmail(e.target.value)} type="text" placeholder="22964859k" id="rut" name="email" />
+          <input value={loginImput.rut} onChange={handleImput} type="text" placeholder="22964859k" id="rut" name="rut" />
+          <span>{loginImput.error_list.rut}</span>
           <label htmlFor="password">Contraseña</label>
-          <input value={pass} onChange={(e) => setPass(e.target.value)} type="password" placeholder="********" id="password" name="password" />
+          <input value={loginImput.password} onChange={handleImput} type="password" placeholder="********" id="password" name="password" />
+          <span>{loginImput.error_list.password}</span>
           <button type="submit" >Ingresar</button>
         </form>
       </div>
