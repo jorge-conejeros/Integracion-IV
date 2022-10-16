@@ -6,11 +6,11 @@ import Menu from '../components/Menu'
 import '../Styles/Session.css'
 import axios from 'axios';
 
-
 const endpoint = 'http://127.0.0.1:8000/api';
+//const divcompartido = document.getElementById('divshare');
 
 const Session = () => {
-
+  
   return (
     <>
       <div className='nav-container'>
@@ -21,9 +21,6 @@ const Session = () => {
       </div>
       <div className='banner-container'>
         <Menu />
-      </div>
-      <div className='Info-container'>
-        QUE BUSCAS?
       </div>
       <div className='Contacto-container'>
         <Contacto />

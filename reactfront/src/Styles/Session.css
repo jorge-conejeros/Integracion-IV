@@ -22,27 +22,6 @@ body{
     color: aliceblue;
 }
 
-/* Menu con opciones */
-.banner-container {
-    position: relative;
-    text-align: center;
-    align-content: left;
-    border-radius: 6px;
-    position: relative;
-    margin-top: 15px;
-}
-
-/* Donde va la informacion*/
-.Info-container {
-    position: relative;
-    text-align: center;
-    align-content: left;
-    border-radius: 6px;
-    position: relative;
-    margin-top: 20px;
-    background: white;
-}
-
 .Contacto-container{
     margin-top: 10px auto;
 }

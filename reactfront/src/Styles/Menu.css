@@ -1,0 +1,27 @@
+.espacio{
+    background: #0575E6;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #021B79, #0575E6);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #021B79, #0575E6);
+    height: 20px;
+    position: relative;
+}
+
+/* Menu con opciones */
+.banner-container {
+    text-align: center;
+    align-content: left;
+    border-radius: 6px;
+    position: relative;
+    margin-top: 15px;
+}
+
+/* Donde va la informacion*/
+.Info-container {
+    position: relative;
+    text-align: center;
+    align-content: left;
+    border-radius: 6px;
+    background: white;
+}
