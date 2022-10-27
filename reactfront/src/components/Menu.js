@@ -10,6 +10,10 @@ import Session from '../pages/Session';
 import '../Styles/Menu.css'
 import Footer from '../components/Footer'
 import NavBar from '../components/Navbar'
+import Dropdown from 'react-bootstrap/Dropdown';
+import DropdownButton from 'react-bootstrap/DropdownButton';
+import SplitButton from 'react-bootstrap/SplitButton';
+import ButtonGroup from 'react-bootstrap/ButtonGroup';
 
 
 const endpoint ='http://127.0.0.1:8000/api';
@@ -25,7 +29,14 @@ function Menu() {
 
   const [myDiv, setMyDiv] = useState("");
 
+  const [selected, setSelected] = useState(1)
 
+  const toggle = (i) => {
+    if (selected === i) {
+      return setSelected(null)
+    }
+    setSelected(i)
+  }
 
 
   const logoutSubmit = (e) => {
@@ -91,18 +102,81 @@ function Menu() {
         <div className='Info-container' id='divshare'>
           <p>{myDiv}</p>
           <p>
+            {myDiv === "Préstamos Biblioteca" && 
+            <table className='componente_A'>
+              <thead>
+                <tr>
+                  <th>Material</th>
+                  <th>Título</th>
+                  <th>Autor</th>
+                  <th>Fecha Préstamo</th>
+                  <th>Fecha Devolución</th>
+                  <th>Biblioteca</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Primer dato</td>
+                  <td>Segundo dato</td>
+                  <td>Tercer dato</td>
+                  <td>Cuarto dato</td>
+                  <td>Quinto dato</td>
+                  <td>Sexto dato</td>
+                </tr>
+              </tbody>
+            </table>}
+           
             {myDiv === "Información Académica" && 
-            <div className='Footer-container'>
-            <Footer />
+            <div className='componente_B'>
+              <div className='acordeon'>
+                {data.map((item, i) => (
+                  <div className='item'>
+                    <p>En esta sección encontrarás información académica: cursos inscritos, cursos aprobados, cursos reprobados, competencias genéricas y créditos de libre disposición.</p>
+                    <div className='title' onClick={() =>  toggle(i)}>       
+                      <h4>{item.Historial}</h4>
+                      <span>{selected === i ? '-' : '+'}</span>
+                    </div>
+                    <div className={selected === i ? 'contenido show' : 'contenido'}>{item.Info}
+                    <div>  
+                    </div>
+                    </div>  
+                  </div>
+                ))}
+              </div>
             </div>}
-            {myDiv === "Documentos" && 
-            <div className='nav-container'>
-            <NavBar />
-            </div>}
+          
+          
+          
+            {myDiv === "Notas Parciales" && 
+            <div className='componente_C'>
+            <DropdownButton
+              as={ButtonGroup}           
+              align={{lg: 'end' }}
+              title="Notas Parciales"
+              id="dropdow-menu-align-responsive"
+              >
+            <div>
+              <h1>Información del Estudiante</h1>
+            <tr>
+              <th>Rut: $rut</th>
+              <th>Nombre: $nombre</th>
+            </tr>
+            </div>
+            </DropdownButton> 
+              
+            
+            </div>} 
           </p>
         </div>
         </>
       );
 }
+
+const data = [
+  {
+    Historial: 'Historia Académica',
+    Info: 'Información del Estudiante'
+  }
+]
 
 export default Menu;
