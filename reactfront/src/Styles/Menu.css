@@ -1,84 +1,85 @@
-.espacio{
-    background: #0575E6;
-    /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #021B79, #0575E6);
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #021B79, #0575E6);
-    height: 20px;
-    position: relative;
-}
-
-/* Menu con opciones */
 .banner-container {
     text-align: center;
+    align-content: left;
     align-content: center;
     border-radius: 6px;
     position: relative;
     margin-top: 15px;
 }
-
-/* Donde va la informacion*/
 .Info-container {
     position: relative;
     text-align: center;
+    align-content: left;
     align-content: center;
-    border-radius: 6px;
+    background: wheat;
+    font-size: 30px;
 }
 
 /* Datos Biblioteca */
 .componente_A {
-    background:#0575E6;
-    width: 100%;
     font-size: 16px;
+    display: inline-block;
 }
 
-/* Info prestamos */
-.componente_A tbody tr {
-    background:white;
+.componente_A thead tr td {
+    background:#0575E6;
+    height: 4vh;
+    width: 25vh;
 }
 
-/* Recuadros */
-.componente_A td {
-    padding: 12px 15px;
+.componente_A tbody tr td{
+    background: white;
+    height: 8vh;
+    width: 25vh;
 }
 
-/* Datos Info. Académica */
-.Componente-_B {
-    display: flex;
-    height: 100vh;
-    width: 100vh;
-    justify-content: center;
-    align-items: center;
+/* Información Académica */
+.accordion {
+    display: inline-block;
+    width: 90%;
 }
 
-.acordeon {
-    width: 100%;
+.accordion h5 {
+    font-family:'Times New Roman', Times, serif;
+    font-size: 19px;
+}
+.accordion h6 {
+    font-family:'Times New Roman', Times, serif;
+    font-size: 19px;
 }
 
-.item {
-    margin-bottom: 5px;
-    padding: 10px 20px;
+.componente_B {
+    font-size: 16px;
+    display: inline-block;
 }
 
-.title {
-    display: flex;
-    justify-content:space-between;
-    align-items: center;
-    cursor: pointer;
-    background: #0575E6;
+.componente_B thead tr td {
+    background:#0575E6;
+    height: 4vh;
+    width: 40vh;
 }
 
-.title p {
-    align-items: center;
+.componente_B tbody tr td{
+    background: wheat;
+    height: 8vh;
 }
 
-.contenido {
-    max-height: 0;
-    overflow: hidden;
+.select h5 {
+    font-size: 18px;
 }
 
-.contenido.show {
-    height: auto;
-    max-height: 9999px;
+/* Notas Parciales */
+.componente_C {
+    font-size: 16px;
+    display: inline-block;
+}
+.componente_C thead tr td {
+    background:#0575E6;
+    height: 4vh;
+    width: 40vh;
+}
 
+.componente_C tbody tr td{
+    background: wheat;
+    height: 8vh;
 }
