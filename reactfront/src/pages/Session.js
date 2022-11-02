@@ -7,9 +7,12 @@ import '../Styles/Session.css'
 import axios from 'axios';
 
 const endpoint = 'http://127.0.0.1:8000/api';
+
+
 //const divcompartido = document.getElementById('divshare');
 
 const Session = () => {
+  const name = localStorage.getItem('auth_name');
   
   return (
     <>
@@ -17,7 +20,7 @@ const Session = () => {
         <NavBar />
       </div>
       <div className='welcome-container'>
-        <h2>BIENVENIDO $Nombre</h2>
+        <h2>BIENVENIDO {name}</h2>
       </div>
       <div className='banner-container'>
         <Menu />

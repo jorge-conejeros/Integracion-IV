@@ -25,6 +25,6 @@ Route::middleware(['auth:sanctum'])->group(function () {
 
 Route::controller(StudentController::class)->group(function () {
     Route::get('/students', 'index');
-    Route::get('/students/{id}', 'show');
+    Route::get('/students/{rut}', 'show');
 });
 

@@ -13,6 +13,10 @@ class StudentController extends Controller
     public function index()
     {
         $students = Student::all();
+        // return response()->json([
+        //     'studentname'=>$students->firstname,
+        //     'studentlastname' =>$students->lastname
+        // ]);
         return $students;
     }
     public function store(Request $request)
@@ -20,10 +24,14 @@ class StudentController extends Controller
         //
     }
 
-    public function show($id)
+    public function show(Request $request)
     {
-        $student = Student::find($id);
-        return $student;
+        $student = Student::where('rut', $request->rut)->first();
+        return response()->json([
+            'studentname'=>$student->firstname,
+            'studentlastname'=>$student->lastname
+        ]);
+        // return $student;
     }
 
     public function update(Request $request, $id)
