@@ -15,7 +15,7 @@ import DropdownButton from 'react-bootstrap/DropdownButton';
 import SplitButton from 'react-bootstrap/SplitButton';
 import ButtonGroup from 'react-bootstrap/ButtonGroup';
 import Accordion from 'react-bootstrap/Accordion';
-
+import Button from 'react-bootstrap/Button';
 
 const endpoint ='http://127.0.0.1:8000/api';
 
@@ -489,35 +489,18 @@ myDiv === "Horas Asistente Social" &&
 //Documentos//
 myDiv === "Documentos" && 
   <div>
-  <p class="azul">Estimados/as estudiantes,<br></br>La Vicerrectoría Académica
+  <p class="one">Estimados/as estudiantes,<br></br>La Vicerrectoría Académica
   a través de la Dirección de Admisión y Registros Académicos en conjunto con
   la Dirección de Informática, tiene el agrado de comunicarles que contamos
   con un nuevo servicio de Firma Electrónica Avanzada, el cual permitirá brindarles
   una mejor atención y disminuir los tiempos</p>
+  <p class="two">* Para imprimir los documentos se recomienda abrir con Adobre Acrobat Reader.<br></br>
+  * Debe habilitar la opción de ventanas emergentes de su navegador</p>
   <Accordion>
       <Accordion.Item eventKey="0">
-      <Accordion.Header>Reserva de Hora
+      <Accordion.Header>Solicitudes
       </Accordion.Header>
         <Accordion.Body>
-        <div>
-          Información del Estudiante
-        </div>
-        <div>
-        <table className='table_B'>
-          <thead>
-            <tr>
-              <td>Rut</td>
-              <td>Nombre</td>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Dato1</td>
-              <td>Dato2</td>
-            </tr>
-          </tbody>
-        </table>
-        </div> 
         <h5>Seleccione una Carrera:</h5>   
       <Dropdown>
         <Dropdown.Toggle variant="primary" id="dropdown-basic">
@@ -527,26 +510,38 @@ myDiv === "Documentos" &&
           <Dropdown.Item href="#/action-2">carrera 1</Dropdown.Item>
         </Dropdown.Menu>
       </Dropdown>
-      <h5>Datos de Reserva</h5>
-      <div>
-        <table className='calendario'>
-          <thead>
-            <tr>
-              <td>dia?</td>
-              <td></td>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Dato1</td>
-              <td>Dato2</td>
-            </tr>
-          </tbody>
-        </table>
-        </div> 
-        
+      <br></br>
+      <div id='igual'>
+      <p class="same">Certificado de Alumno Regular</p> 
+      <>
+        <Button variant="primary" size="lg">
+          Large button
+        </Button>{' '}
+        </>
+      </div>
+      <br></br>
+      <div id='igual'>
+      <p class="same">Certificado Académico</p>
+      <>
+        <Button variant="info" size="sm">
+          Large button
+        </Button>{' '}
+        </>
+      </div>
+      <br></br>
+      <div id='conducta'>
+      <p class="same">Certificado de Conducta</p>
+      <>
+        <Button variant="primary" size="lg">
+          Large button
+        </Button>{' '}
+        </>
+      </div>
+      <br></br>
+
       </Accordion.Body>
       </Accordion.Item>
+      <br></br>
       </Accordion>
   </div>}
 
