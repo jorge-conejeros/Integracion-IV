@@ -16,24 +16,24 @@
 }
 
 /* Datos Biblioteca */
-.componente_A {
+.table_A {
     font-size: 16px;
     display: inline-block;
 }
 
-.componente_A thead tr td {
+.table_A thead tr td {
     background:#0575E6;
     height: 4vh;
     width: 25vh;
 }
 
-.componente_A tbody tr td{
+.table_A tbody tr td{
     background: white;
     height: 8vh;
     width: 25vh;
 }
 
-/* Información Académica */
+/* Accordion */
 .accordion {
     display: inline-block;
     width: 90%;
@@ -48,18 +48,20 @@
     font-size: 19px;
 }
 
-.componente_B {
+/* Tablas Componentes */
+
+.table_B {
     font-size: 16px;
     display: inline-block;
 }
 
-.componente_B thead tr td {
+.table_B thead tr td {
     background:#0575E6;
     height: 4vh;
     width: 40vh;
 }
 
-.componente_B tbody tr td{
+.table_B tbody tr td{
     background: wheat;
     height: 8vh;
 }
@@ -68,18 +70,6 @@
     font-size: 18px;
 }
 
-/* Notas Parciales */
-.componente_C {
-    font-size: 16px;
-    display: inline-block;
-}
-.componente_C thead tr td {
-    background:#0575E6;
-    height: 4vh;
-    width: 40vh;
-}
-
-.componente_C tbody tr td{
-    background: wheat;
-    height: 8vh;
+.select {
+    display: inline;
 }
