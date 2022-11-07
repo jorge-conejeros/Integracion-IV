@@ -109,7 +109,7 @@ function Menu() {
 {
 //PRÉSTAMOS BIBLIOTECA//
 myDiv === "Préstamos Biblioteca" && 
-  <table className='componente_A'>
+  <table className='table_A'>
     <thead>
       <tr>
         <td>Material</td>
@@ -129,7 +129,9 @@ myDiv === "Préstamos Biblioteca" &&
   </table>}
            
 {
+
 // INFORMACIÓN ACADÉMICA // 
+
 myDiv === "Información Académica" && 
   <div className='accordion'>
     <h5>En esta sección encontrarás información académica: cursos inscritos, cursos aprobados, cursos reprobados, competencias genéricas y créditos de libre disposición.
@@ -143,7 +145,7 @@ myDiv === "Información Académica" &&
           Información del Estudiante
         </div>
         <div>
-          <table className='componente_B'>
+          <table className='table_B'>
             <thead>
               <tr>
                 <td>Rut</td>
@@ -193,11 +195,13 @@ myDiv === "Información Académica" &&
         </div>
         </Accordion.Body>
         </Accordion.Item>
+        <br></br>
     </Accordion>   
   </div>}
           
                
 {
+
 //NOTAS PARCIALES------------------------------------------------
 
 myDiv === "Notas Parciales" && 
@@ -210,14 +214,14 @@ myDiv === "Notas Parciales" &&
         <div>
           Información del Estudiante
         </div>
-        <table className='componente_C'>
+        <table className='table_B'>
           <thead>
             <tr>
               <td>Rut</td>
               <td>Nombre</td>
             </tr>
           </thead>
-          <tbody id='datos'>
+          <tbody>
             <tr>
               <td>Dato1</td>
               <td>Dato2</td>
@@ -252,14 +256,14 @@ myDiv === "Notas Parciales" &&
         <div>
           Información del Estudiante
         </div>
-        <table className='componente_C'>
+        <table className='table_B'>
           <thead>
             <tr>
               <td>Rut</td>
               <td>Nombre</td>
             </tr>
           </thead>
-          <tbody id='datos'>
+          <tbody>
             <tr>
               <td>Dato1</td>
               <td>Dato2</td>
@@ -289,12 +293,15 @@ myDiv === "Notas Parciales" &&
     </Dropdown>
       </Accordion.Body>
       </Accordion.Item>
+      <br></br>
     </Accordion>
       
   </div>}
 
 {
+
 //CUENTA CORRIENTE//
+
 myDiv === "Cuenta Corriente" && 
   <div className='accordion'>
     <h6>En esta sección encontrarás información de tus cuentas (Deudas, Pagarés, cuotas, etc) y beneficios (Becas y/o Créditos) que posees en la Universidad Católica de Temuco.</h6>
@@ -302,7 +309,37 @@ myDiv === "Cuenta Corriente" &&
       <Accordion.Item eventKey="0">
       <Accordion.Header>Cuenta Corriente</Accordion.Header>
         <Accordion.Body>
-        <h4>Seleccione una Carrera:</h4>      
+        <h5>En esta sección podras consultar el estado de tu cuenta corriente.</h5>
+        <div>
+          Información del Estudiante
+        </div>
+        <br></br>
+        <div>
+        <table className='table_B'>
+          <thead>
+            <tr>
+              <td>Rut</td>
+              <td>Nombre</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Dato1</td>
+              <td>Dato2</td>
+            </tr>
+          </tbody>
+        </table>
+        </div> 
+        <div>
+         Estado de Cuotas Cuenta Corriente
+        </div>
+        <br></br>
+        <div>
+         Todas las Cuotas
+        </div>
+        <br></br>
+        <div className='select'>
+        <h5>Seleccione Estado:</h5>   
       <Dropdown>
         <Dropdown.Toggle variant="primary" id="dropdown-basic">
           Lista de carreras...
@@ -311,6 +348,16 @@ myDiv === "Cuenta Corriente" &&
           <Dropdown.Item href="#/action-2">carrera 1</Dropdown.Item>
         </Dropdown.Menu>
       </Dropdown>
+      <h5>Seleccione Concepto:</h5>   
+      <Dropdown>
+        <Dropdown.Toggle variant="primary" id="dropdown-basic">
+          Lista de carreras...
+        </Dropdown.Toggle>
+        <Dropdown.Menu>
+          <Dropdown.Item href="#/action-2">carrera 1</Dropdown.Item>
+        </Dropdown.Menu>
+      </Dropdown>
+      </div>
       </Accordion.Body>
       </Accordion.Item>
       
@@ -373,6 +420,7 @@ myDiv === "Cuenta Corriente" &&
       </Dropdown>
       </Accordion.Body>
       </Accordion.Item>
+      <br></br>
     </Accordion>           
   </div>}
 
@@ -381,15 +429,127 @@ myDiv === "Cuenta Corriente" &&
 myDiv === "Horas Asistente Social" && 
   <div>
   <h6>En esta sección podrás realizar una reserva de hora con un/a asistente social donde se realizan las clases de tu carrera. Debes considerar que una reserva debe hacerse con 24 horas de antelación (de Lunes a Viernes) y sólo se podrá realizar una reserva cada 15 días a través de este medio. La atención será a través de videollamada, ya que se encuentran suspendidas las atenciones presenciales de forma indefinida</h6>
-  <Dropdown>
+  <Accordion>
+      <Accordion.Item eventKey="0">
+      <Accordion.Header>Reserva de Hora
+      </Accordion.Header>
+        <Accordion.Body>
+        <div>
+          Información del Estudiante
+        </div>
+        <div>
+        <table className='table_B'>
+          <thead>
+            <tr>
+              <td>Rut</td>
+              <td>Nombre</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Dato1</td>
+              <td>Dato2</td>
+            </tr>
+          </tbody>
+        </table>
+        </div> 
+        <h5>Seleccione una Carrera:</h5>   
+      <Dropdown>
         <Dropdown.Toggle variant="primary" id="dropdown-basic">
           Lista de carreras...
         </Dropdown.Toggle>
         <Dropdown.Menu>
           <Dropdown.Item href="#/action-2">carrera 1</Dropdown.Item>
-          </Dropdown.Menu>
+        </Dropdown.Menu>
       </Dropdown>
+      <h5>Datos de Reserva</h5>
+      <div>
+        <table className='calendario'>
+          <thead>
+            <tr>
+              <td>dia?</td>
+              <td></td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Dato1</td>
+              <td>Dato2</td>
+            </tr>
+          </tbody>
+        </table>
+        </div> 
+        
+      </Accordion.Body>
+      </Accordion.Item>
+      </Accordion>
   </div>}
+
+  {
+//Documentos//
+myDiv === "Documentos" && 
+  <div>
+  <p class="azul">Estimados/as estudiantes,<br></br>La Vicerrectoría Académica
+  a través de la Dirección de Admisión y Registros Académicos en conjunto con
+  la Dirección de Informática, tiene el agrado de comunicarles que contamos
+  con un nuevo servicio de Firma Electrónica Avanzada, el cual permitirá brindarles
+  una mejor atención y disminuir los tiempos</p>
+  <Accordion>
+      <Accordion.Item eventKey="0">
+      <Accordion.Header>Reserva de Hora
+      </Accordion.Header>
+        <Accordion.Body>
+        <div>
+          Información del Estudiante
+        </div>
+        <div>
+        <table className='table_B'>
+          <thead>
+            <tr>
+              <td>Rut</td>
+              <td>Nombre</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Dato1</td>
+              <td>Dato2</td>
+            </tr>
+          </tbody>
+        </table>
+        </div> 
+        <h5>Seleccione una Carrera:</h5>   
+      <Dropdown>
+        <Dropdown.Toggle variant="primary" id="dropdown-basic">
+          Lista de carreras...
+        </Dropdown.Toggle>
+        <Dropdown.Menu>
+          <Dropdown.Item href="#/action-2">carrera 1</Dropdown.Item>
+        </Dropdown.Menu>
+      </Dropdown>
+      <h5>Datos de Reserva</h5>
+      <div>
+        <table className='calendario'>
+          <thead>
+            <tr>
+              <td>dia?</td>
+              <td></td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Dato1</td>
+              <td>Dato2</td>
+            </tr>
+          </tbody>
+        </table>
+        </div> 
+        
+      </Accordion.Body>
+      </Accordion.Item>
+      </Accordion>
+  </div>}
+
 
 </p>
 </div>
