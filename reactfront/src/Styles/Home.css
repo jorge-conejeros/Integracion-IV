@@ -24,3 +24,19 @@
 .Contacto-container {
     margin-top: 80px;
 }
+
+.big-container {
+    display: flex;
+    align-items: flex-end;
+}
+
+.botoncito {
+    width: 70px;
+    height: 70px;
+    border-radius: 15px;
+    padding: 0;
+    position: absolute;
+    top: 50px;
+    left: 5px;
+
+}
