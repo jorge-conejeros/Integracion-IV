@@ -12,12 +12,16 @@ import Voluntariado from '../assets/images/voluntariado.jpg'
 const AccesosDirect = () => {
   return (
     <>
+      <div className='saltito'>
+        
+      </div>
       <div className='title-direct'>
         <h3 id='one-title'>
           Enlaces de Interes
         </h3>
       </div>
       <div className='enlaces'>
+        
         <a href='https://galeriaarte.uct.cl/'>
           <img src={Galeria} id='galeria' />
         </a>

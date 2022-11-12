@@ -37,12 +37,13 @@ const Home = () => {
       <Login />
     </div>
     <div className='big-container'>
-    <div className='banner-container'>
-      <Banner/>
-    </div>
     <div className='Accesos-container'>
       <AccesosDirect />
     </div>
+    <div className='banner-container'>
+      <Banner/>
+    </div>
+    
     </div>
     <div className='Contacto-container'>
       <Contacto />
