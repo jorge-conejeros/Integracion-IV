@@ -16,6 +16,10 @@ import SplitButton from 'react-bootstrap/SplitButton';
 import ButtonGroup from 'react-bootstrap/ButtonGroup';
 import Accordion from 'react-bootstrap/Accordion';
 import Button from 'react-bootstrap/Button';
+import Pagination from 'react-bootstrap/Pagination';
+import webpay from '../assets/images/webpay.png';
+import profile from '../assets/images/profile.png';
+
 
 const endpoint ='http://127.0.0.1:8000/api';
 
@@ -338,48 +342,99 @@ myDiv === "Cuenta Corriente" &&
          Todas las Cuotas
         </div>
         <br></br>
-        <div className='select'>
+        <div>
         <h5>Seleccione Estado:</h5>   
       <Dropdown>
         <Dropdown.Toggle variant="primary" id="dropdown-basic">
-          Lista de carreras...
+          Eliga un estado
         </Dropdown.Toggle>
         <Dropdown.Menu>
-          <Dropdown.Item href="#/action-2">carrera 1</Dropdown.Item>
+          <Dropdown.Item href="#/action-2">Todos</Dropdown.Item>
+          <Dropdown.Item href="#/action-2">Vigente</Dropdown.Item>
+          <Dropdown.Item href="#/action-2">Pagado</Dropdown.Item>
         </Dropdown.Menu>
       </Dropdown>
-      <h5>Seleccione Concepto:</h5>   
+      <br></br>
+      <h5>Seleccione Concepto:</h5>
       <Dropdown>
         <Dropdown.Toggle variant="primary" id="dropdown-basic">
-          Lista de carreras...
+          Lista de conceptos
         </Dropdown.Toggle>
         <Dropdown.Menu>
-          <Dropdown.Item href="#/action-2">carrera 1</Dropdown.Item>
+          <Dropdown.Item href="#/action-2">MATRÍCULA</Dropdown.Item>
+          <Dropdown.Item href="#/action-2">CUOTA CURRICULAR</Dropdown.Item>
         </Dropdown.Menu>
       </Dropdown>
+      <Button variant="light">Filtrar</Button>
       </div>
+      <br></br>
+      <div>
+        <table className='table_B'>
+          <thead>
+            <tr>
+              <td>Rut</td>
+              <td>Nombre</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Dato1</td>
+              <td>Dato2</td>
+            </tr>
+          </tbody>
+        </table>
+        </div>
+        <div className='paginas_pag'>
+          <Pagination>
+            <Pagination.Prev/>
+            <Pagination.Item active>{1}</Pagination.Item>
+            <Pagination.Item>{2}</Pagination.Item>
+            <Pagination.Item>{3}</Pagination.Item>
+            <Pagination.Item>{4}</Pagination.Item>
+            <Pagination.Item>{5}</Pagination.Item>
+            <Pagination.Next />
+          </Pagination>
+        </div>
       </Accordion.Body>
       </Accordion.Item>
+      
       
       <Accordion.Item eventKey="1">
       <Accordion.Header>Pago con WebPay Plus</Accordion.Header>
         <Accordion.Body>
-        <h4>Seleccione una Carrera:</h4>      
-      <Dropdown>
-        <Dropdown.Toggle variant="primary" id="dropdown-basic">
-          Lista de carreras...
-        </Dropdown.Toggle>
-        <Dropdown.Menu>
-          <Dropdown.Item href="#/action-2">carrera 1</Dropdown.Item>
-        </Dropdown.Menu>
-      </Dropdown>
+        <div>
+          Información del Estudiante
+        </div>
+        <br></br>     
+        <div>
+        <table className='table_B'>
+          <thead>
+            <tr>
+              <td>Rut</td>
+              <td>Nombre</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Dato1</td>
+              <td>Dato2</td>
+            </tr>
+          </tbody>
+        </table>
+        </div>
+        <div>
+          <Button variant="light" href='https://pagosweb.uct.cl/estudiantes' target='blank'>Ir al nuevo portal de pagos</Button>
+        </div>
+        <div>
+          <img src={webpay} className="img_web"></img>
+        </div>
       </Accordion.Body>
       </Accordion.Item>
       
       <Accordion.Item eventKey="2">
       <Accordion.Header>Beneficios Estudiantiles</Accordion.Header>
         <Accordion.Body>
-        <h4>Seleccione una Carrera:</h4>      
+        <h5>Seleccione una Carrera:</h5>      
       <Dropdown>
         <Dropdown.Toggle variant="primary" id="dropdown-basic">
           Lista de carreras...
@@ -394,13 +449,37 @@ myDiv === "Cuenta Corriente" &&
       <Accordion.Item eventKey="3">
       <Accordion.Header>Crédito Complementario</Accordion.Header>
         <Accordion.Body>
-        <h4>Seleccione una Carrera:</h4>      
+        <h6>En esta sección podras consultar el estado de tus cuotas (PAGADA, VIGENTE) de tu crédito complementario.</h6>
+        <br></br>
+        <div>
+          Información del Estudiante
+        </div>
+        <br></br>
+        <div>
+        <table className='table_B'>
+          <thead>
+            <tr>
+              <td>Rut</td>
+              <td>Nombre</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Dato1</td>
+              <td>Dato2</td>
+            </tr>
+          </tbody>
+        </table>
+        </div>
+        <div>Cuotas Crédito Complementario</div>
+        <br></br>
+        <h5>Seleccione un Año:</h5>      
       <Dropdown>
         <Dropdown.Toggle variant="primary" id="dropdown-basic">
-          Lista de carreras...
+          Listado de Años
         </Dropdown.Toggle>
         <Dropdown.Menu>
-          <Dropdown.Item href="#/action-2">carrera 1</Dropdown.Item>
+          <Dropdown.Item href="#/action-2">1</Dropdown.Item>
         </Dropdown.Menu>
       </Dropdown>
       </Accordion.Body>
@@ -409,13 +488,34 @@ myDiv === "Cuenta Corriente" &&
       <Accordion.Item eventKey="4">
       <Accordion.Header>Emisión de Documentos</Accordion.Header>
         <Accordion.Body>
-        <h4>Seleccione una Carrera:</h4>      
+        <div>
+          Información del Estudiante
+        </div>
+        <br></br>
+        <div>
+        <table className='table_B'>
+          <thead>
+            <tr>
+              <td>Rut</td>
+              <td>Nombre</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Dato1</td>
+              <td>Dato2</td>
+            </tr>
+          </tbody>
+        </table>
+        </div>
+        <br></br>
+        <h5>Seleccione una Carrera:</h5>      
       <Dropdown>
         <Dropdown.Toggle variant="primary" id="dropdown-basic">
           Lista de carreras...
         </Dropdown.Toggle>
         <Dropdown.Menu>
-          <Dropdown.Item href="#/action-2">carrera 1</Dropdown.Item>
+          <Dropdown.Item href="#/action-2">Carrera 1</Dropdown.Item>
         </Dropdown.Menu>
       </Dropdown>
       </Accordion.Body>
@@ -488,19 +588,36 @@ myDiv === "Horas Asistente Social" &&
   {
 //Documentos//
 myDiv === "Documentos" && 
-  <div>
-  <p class="one">Estimados/as estudiantes,<br></br>La Vicerrectoría Académica
+  <div className='accordion'>
+  <p class="azul">Estimados/as estudiantes,<br></br>La Vicerrectoría Académica
   a través de la Dirección de Admisión y Registros Académicos en conjunto con
   la Dirección de Informática, tiene el agrado de comunicarles que contamos
   con un nuevo servicio de Firma Electrónica Avanzada, el cual permitirá brindarles
   una mejor atención y disminuir los tiempos</p>
-  <p class="two">* Para imprimir los documentos se recomienda abrir con Adobre Acrobat Reader.<br></br>
-  * Debe habilitar la opción de ventanas emergentes de su navegador</p>
   <Accordion>
       <Accordion.Item eventKey="0">
-      <Accordion.Header>Solicitudes
+      <Accordion.Header>Reserva de Hora
       </Accordion.Header>
         <Accordion.Body>
+        <div>
+          Información del Estudiante
+        </div>
+        <div>
+        <table className='table_B'>
+          <thead>
+            <tr>
+              <td>Rut</td>
+              <td>Nombre</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Dato1</td>
+              <td>Dato2</td>
+            </tr>
+          </tbody>
+        </table>
+        </div> 
         <h5>Seleccione una Carrera:</h5>   
       <Dropdown>
         <Dropdown.Toggle variant="primary" id="dropdown-basic">
@@ -510,41 +627,102 @@ myDiv === "Documentos" &&
           <Dropdown.Item href="#/action-2">carrera 1</Dropdown.Item>
         </Dropdown.Menu>
       </Dropdown>
-      <br></br>
-      <div id='igual'>
-      <p class="same">Certificado de Alumno Regular</p> 
-      <>
-        <Button variant="primary" size="lg">
-          Large button
-        </Button>{' '}
-        </>
-      </div>
-      <br></br>
-      <div id='igual'>
-      <p class="same">Certificado Académico</p>
-      <>
-        <Button variant="info" size="sm">
-          Large button
-        </Button>{' '}
-        </>
-      </div>
-      <br></br>
-      <div id='conducta'>
-      <p class="same">Certificado de Conducta</p>
-      <>
-        <Button variant="primary" size="lg">
-          Large button
-        </Button>{' '}
-        </>
-      </div>
-      <br></br>
+      <h5>Datos de Reserva</h5>
+      <div>
+        <table className='calendario'>
+          <thead>
+            <tr>
+              <td>dia?</td>
+              <td></td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Dato1</td>
+              <td>Dato2</td>
+            </tr>
+          </tbody>
+        </table>
+        </div> 
+        
+      </Accordion.Body>
+      </Accordion.Item>
+      </Accordion>
+  </div>}
 
+  {
+//Obs. Ficha Académica//
+myDiv === "Obs. Ficha Académica" && 
+  <div className='accordion'>
+  <h6>En esta sección encontrarás el formulario para solicitar una modificación a tu historial académico, a través de ella puedes solicitar modificación de notas, incorporar notas y/o eliminar notas.
+      <br></br>
+      Además podrás consultar el estado de tu solicitud.</h6>
+  <Accordion>
+      <Accordion.Item eventKey="0">
+      <Accordion.Header>Resultados Obs. Ficha Académica</Accordion.Header>
+        <Accordion.Body>
+        <h6>Seleccione una carrera para consultar el estado de su observación a la ficha académica acumulada.</h6>
+        <br></br>
+        <h5>Seleccione una Carrera:</h5>   
+      <Dropdown>
+        <Dropdown.Toggle variant="primary" id="dropdown-basic">
+          Lista de carreras...
+        </Dropdown.Toggle>
+        <Dropdown.Menu>
+          <Dropdown.Item href="#/action-2">carrera 1</Dropdown.Item>
+        </Dropdown.Menu>
+      </Dropdown>
       </Accordion.Body>
       </Accordion.Item>
       <br></br>
       </Accordion>
   </div>}
 
+  {
+//Obs. Ficha Académica//
+myDiv === "Información Personal" && 
+  <div>
+  <div>
+  <img src={profile} alt='Foto de Perfil' className='img_info'></img>
+  </div>
+  <br></br>
+  <div className='tabla_info'>
+  <table>
+    <tbody>
+      <tr> 
+        <td><strong>Rut:</strong></td>
+        <td>dato</td>
+      </tr>
+      <tr>
+        <td><strong>Apellido Paterno:</strong></td>
+        <td>apellido 1</td>
+      </tr>
+      <tr>
+        <td><strong>Apellido Materno:</strong></td>
+        <td>apellido 2</td>
+      </tr>
+      <tr>
+        <td><strong>Nombres:</strong></td>
+        <td>nombre 1 nombre 2</td>
+      </tr>
+      <tr>
+        <td><strong>Fecha de Nac.:</strong></td>
+        <td>dd-mm-yy</td>
+      </tr>
+      <tr>
+        <td><strong>Sexo:</strong></td>
+        <td>m f</td>
+      </tr>
+      <tr>
+        <td><strong>E-Mail UCTemuco:</strong></td>
+        <td>dato2000@alu.ucl.cl</td>
+      </tr>
+    </tbody>
+    </table>
+    </div>
+    <br></br>
+    <br></br>
+  </div>}
 
 </p>
 </div>
