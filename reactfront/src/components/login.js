@@ -72,7 +72,7 @@ const Login = () => {
           <label htmlFor="password">Contraseña</label>
           <input value={loginImput.password} onChange={handleImput} type="password" placeholder="********" id="password" name="password" />
           <span>{loginImput.error_list.password}</span>
-          <button type="submit" >Ingresar</button>
+          <button type="submit" className='botoningresar' >Ingresar</button>
         </form>
       </div>
     </div>
