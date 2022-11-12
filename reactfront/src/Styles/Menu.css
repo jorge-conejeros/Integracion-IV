@@ -1,7 +1,4 @@
 .banner-container {
-    text-align: center;
-    align-content: left;
-    align-content: center;
     border-radius: 6px;
     position: relative;
     margin-top: 15px;
@@ -9,8 +6,6 @@
 .Info-container {
     position: relative;
     text-align: center;
-    align-content: left;
-    align-content: center;
     background: wheat;
     font-size: 30px;
 }
@@ -70,38 +65,30 @@
     font-size: 18px;
 }
 
-.select {
-    display: inline;
+.paginas_pag {
+    display:inline-block;
 }
 
-/* DOCUMENTOS */
-
-.one{
-    font-size:medium;
-    color: rgb(0, 0, 255);
-    border-style: solid;
-    margin-left: 15px;
-    margin-right: 15px;
-    margin-bottom: 20px;
+.img_web {
+    width: 50%;
+    height: 50%;
 }
 
-.two{
-    font-size:medium;
-    color: rgb(250, 5, 5);
-    border-style: solid;
-    margin-left: 15px;
-    margin-right: 15px;
-    margin-bottom: 20px;
+.img_info {
+    width: 10%;
+    height: 10%;
 }
 
-.same{
-    font-size: 17px;
-    font-style: oblique;
+.tabla_info {
+    display:inline-block;
+    font-size: 20px;
+    border: #0575E6;
+    border-style: dotted;
+    border-radius: 6px;
 }
 
-#igual{
-    border-style: solid;
-    margin-left: 15px;
-    margin-right: 15px;
-    margin-bottom: 20px;
+.tabla_info tbody tr td{
+    height: 8vh;
+    width: 30vh;
 }
+
