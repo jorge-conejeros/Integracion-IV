@@ -582,6 +582,7 @@ myDiv === "Horas Asistente Social" &&
         
       </Accordion.Body>
       </Accordion.Item>
+      <br></br>
       </Accordion>
   </div>}
 
@@ -593,31 +594,14 @@ myDiv === "Documentos" &&
   a través de la Dirección de Admisión y Registros Académicos en conjunto con
   la Dirección de Informática, tiene el agrado de comunicarles que contamos
   con un nuevo servicio de Firma Electrónica Avanzada, el cual permitirá brindarles
-  una mejor atención y disminuir los tiempos</p>
+  una mejor atención y disminuir los tiempos</p><br></br>
+  <p class="rojo">*Para imprimir los documentos se recomienda abrir con Adobe Acrobat Reader.<br></br>
+  *Debe habilitar la opción de ventanas emergentes de su navegador.</p>
   <Accordion>
       <Accordion.Item eventKey="0">
-      <Accordion.Header>Reserva de Hora
+      <Accordion.Header>Certificados
       </Accordion.Header>
         <Accordion.Body>
-        <div>
-          Información del Estudiante
-        </div>
-        <div>
-        <table className='table_B'>
-          <thead>
-            <tr>
-              <td>Rut</td>
-              <td>Nombre</td>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Dato1</td>
-              <td>Dato2</td>
-            </tr>
-          </tbody>
-        </table>
-        </div> 
         <h5>Seleccione una Carrera:</h5>   
       <Dropdown>
         <Dropdown.Toggle variant="primary" id="dropdown-basic">
@@ -627,26 +611,47 @@ myDiv === "Documentos" &&
           <Dropdown.Item href="#/action-2">carrera 1</Dropdown.Item>
         </Dropdown.Menu>
       </Dropdown>
-      <h5>Datos de Reserva</h5>
-      <div>
-        <table className='calendario'>
-          <thead>
-            <tr>
-              <td>dia?</td>
-              <td></td>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Dato1</td>
-              <td>Dato2</td>
-            </tr>
-          </tbody>
-        </table>
-        </div> 
-        
+      <br></br>
+      <div id='general'>
+      <p class='font-style'>Certificado Estudiante Regular</p>
+      <Button variant="warning" size="mm">
+         Descargar
+        </Button>
+      </div>
+      <div id='general'>
+      <p class='font-style'>Certificado Académico</p>
+      <Button href = '#' target="_blank" variant="warning" size="mm">
+         Descargar
+        </Button>
+      </div>
+      <div id='general'>
+      <p class='font-style'>Certificado Conducta</p>
+      <Button href = '#' target="_blank" variant="warning" size="mm">
+         Descargar
+        </Button>
+      </div>
+      <div id='general'>
+      <p class='font-style'>Certificado Permanencia</p>
+      <Button href = '#' target="_blank" variant="warning" size="mm">
+         Descargar
+        </Button>
+      </div>
+      <div id='general'>
+      <p class='font-style'>Convenio de prestación de Servicios</p>
+      <Button href = '#' target="_blank" variant="warning" size="mm">
+         Descargar
+        </Button>
+      </div>
+      <div id='general'>
+      <p class='font-style'>Formulario de Apelación para Causal de Eliminación</p>
+      <p class='except'>El formulacio debe ser completado y entregado de manera física en su carrera.</p>
+      <Button href = 'https://estudiantes.uct.cl/certificados_firmas_digitales/documentos/formulario_apelacion.pdf' target="_blank" variant="warning" size="mm">
+         Descargar
+        </Button>
+      </div>
       </Accordion.Body>
       </Accordion.Item>
+      <br></br>
       </Accordion>
   </div>}
 
@@ -679,7 +684,7 @@ myDiv === "Obs. Ficha Académica" &&
   </div>}
 
   {
-//Obs. Ficha Académica//
+//INFORMACIÓN PERSONAL//
 myDiv === "Información Personal" && 
   <div>
   <div>
@@ -723,6 +728,109 @@ myDiv === "Información Personal" &&
     <br></br>
     <br></br>
   </div>}
+  {
+//SOLICITUDES ESTUDIANTES//
+myDiv === "Solicitudes Estudiantes" && 
+  <div id='normal-div'>
+    <p>En esta sección encontrarás el formulario mediante el cual puedes
+      hacer una solicitud de Reincorporación, Suspensión o Renuncia. Además
+      puedes consultar el estado en que se encuentra tu solicitud.</p><br></br>
+  <div id="danger-div">
+    <h5 class='danger-tittle'>Proceso de suspensión<br></br>
+    Beneficios de arancel MINEDUC 2022</h5><br></br>
+    <p class='danger-body'>Estimados Estudiantes:<br></br>
+    Junto con saludar, informamos que desde el 02 de Agosto hasta el 29 de Semptiembre
+    se encuetra habilitado el proceso de suspensión de Beneficios Estudiantiles MINEDUC.<br></br>
+    Si realizaste suspensión o renuncia académica y cuentras con gratuidad, Beca de arancel o 
+    Fondo Solidario de Crédito Universitario (FSCU) debes de ingresar al siguiente link,
+    <a href='https://docs.google.com/forms/d/e/1FAIpQLSeocRZrad0ibOsL9qbkOQzJ2HT-j7luMSu9Sns-jEQbLW7pKA/closedform' target='_blank'> Formulario </a>
+    y completar el formulario online para solicitar la suspensión de tu beneficio, al que
+    podrás ingresar solo a través de tu correo electrónico institucional.<br></br>
+    Descarga <a href='https://estudiantes.uct.cl/documentos/INSTRUCTIVO_SUSPENSJON_BENEFICIOS_ESTUDIANTES.pdf' target='_blank'>AQUÍ </a>
+    el instructivo del proceso de suspensión de Beneficios Estudiantiles.<br></br>
+    <b>Respecto a la carga de documentos en formato PDF, debes considerar lo siguiente:</b><br></br>
+    1. Formulario suspensiones: Solo lo debes cargar en caso de contar con Beca de Arancel. Se exime
+    de esta obligación a los estudiantes que tengan Gratuidad.<br></br>
+    2. Documentos de respaldo para acreditar motivo de suspensión: Solo lo debes cargar en caso de
+    contar con Gratuidad o Becas de Arancel, toda vez que las suspensiones totales desde el año
+    de asignación del beneficio a la fecha (incluyendo solicitud actual) sean superiores a 02 semestres
+    académicos. Se exime de esta obligación a los estudiantes que tengan FSCU.<br></br>
+    <b>*EL PROCESOS DE SUSPENSIÓN ES DE EXCLUSIVA RESPONSABILIDAD DEL ESTUDIANTE*</b></p>
+  </div>
+  <br></br>
+  <Accordion>
+      <Accordion.Item eventKey="0">
+      <Accordion.Header>Ingresar Solicitud
+      </Accordion.Header>
+        <Accordion.Body>
+      <table className='table_B'>
+          <thead>
+            <tr>
+              <td>Rut</td>
+              <td>Nombre</td>
+              <td>Celular</td>
+              <td>E-Mail</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Dato1</td>
+              <td>Dato2</td>
+              <td>Dato3</td>
+              <td>Dato4</td>
+            </tr>
+          </tbody>
+        </table>  
+        <h5>Seleccione una Carrera:</h5>   
+      <Dropdown>
+        <Dropdown.Toggle variant="primary" id="dropdown-basic">
+          Lista de carreras...
+        </Dropdown.Toggle>
+        <Dropdown.Menu>
+          <Dropdown.Item href="#/action-2">carrera 1</Dropdown.Item>
+        </Dropdown.Menu>
+      </Dropdown>  
+      </Accordion.Body>
+      </Accordion.Item>
+      </Accordion>
+      <Accordion>
+      <Accordion.Item eventKey="1">
+      <Accordion.Header>Resultado de Solicitud</Accordion.Header>
+        <Accordion.Body>
+        <div>
+          Información del Estudiante
+        </div>
+        <table className='table_B'>
+          <thead>
+            <tr>
+              <td>Rut</td>
+              <td>Nombre</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Dato1</td>
+              <td>Dato2</td>
+            </tr>
+          </tbody>
+        </table>
+      <h5>Seleccione Semestre:</h5>
+      <Dropdown>
+        <Dropdown.Toggle variant="primary" id="dropdown-basic">
+          Seleccione Semestre
+        </Dropdown.Toggle>
+
+      <Dropdown.Menu>
+        <Dropdown.Item href="#/action-2">Primer Semestre</Dropdown.Item>
+        <Dropdown.Item href="#/action-3">Segundo Semestre</Dropdown.Item>
+      </Dropdown.Menu>
+    </Dropdown>
+      </Accordion.Body>
+      </Accordion.Item>
+      <br></br>
+      </Accordion>
+  </div>}
+
 
 </p>
 </div>
