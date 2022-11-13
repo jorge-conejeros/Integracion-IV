@@ -2,12 +2,14 @@
     border-radius: 6px;
     position: relative;
     margin-top: 15px;
+    
 }
 .Info-container {
     position: relative;
     text-align: center;
     background: wheat;
     font-size: 30px;
+    border-radius: 8px;
 }
 
 /* Datos Biblioteca */
@@ -54,11 +56,13 @@
     background:#0575E6;
     height: 4vh;
     width: 40vh;
+    border-radius: 2px;
 }
 
 .table_B tbody tr td{
     background: wheat;
     height: 8vh;
+    border-radius: 2px;
 }
 
 .select h5 {
@@ -83,8 +87,9 @@
     display:inline-block;
     font-size: 20px;
     border: #0575E6;
-    border-style: dotted;
+    border-style: solid;
     border-radius: 6px;
+    background: rgb(70, 147, 255);
 }
 
 .tabla_info tbody tr td{
@@ -92,3 +97,46 @@
     width: 30vh;
 }
 
+/* CERTIFICADOS */
+
+#general{
+    border: #0575E6;
+    border-style: solid;
+    margin-top: 5px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+}
+.font-style{
+    font-size: large;
+    font-style: italic;
+}
+
+.azul{
+    border-style: solid;
+    border-color: #0000ff;
+    color: #0000ff;
+    font-size: 23px;
+}
+
+.rojo{
+    border-style: solid;
+    border-color: #ff0000;
+    color: #ff0000;
+    font-size: 23px;
+}
+/* SOLICITUDES ESTUDIANTES */
+
+#danger-div{
+    border-style: solid;
+    border-color: #ff0000;
+    border-radius: 7px;
+}
+
+.danger-body{
+    font-size: medium;
+}
+
+.danger-tittle{
+    font-style: oblique;
+    font-size: larger;
+}
