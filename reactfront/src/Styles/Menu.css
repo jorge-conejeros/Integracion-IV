@@ -86,10 +86,8 @@
 .tabla_info {
     display:inline-block;
     font-size: 20px;
-    border: #0575E6;
-    border-style: solid;
     border-radius: 6px;
-    background: rgb(70, 147, 255);
+    background: rgba(21, 36, 241, 0.705);
 }
 
 .tabla_info tbody tr td{
@@ -124,12 +122,20 @@
     color: #ff0000;
     font-size: 23px;
 }
+.except{
+    font-size: medium;
+    font-style: italic;
+    color: #ff0000;
+    font-weight: bold;
+}
 /* SOLICITUDES ESTUDIANTES */
 
 #danger-div{
     border-style: solid;
-    border-color: #ff0000;
+    border-color: #2200ff;
     border-radius: 7px;
+    width: 80%;
+    display:inline-table;
 }
 
 .danger-body{
