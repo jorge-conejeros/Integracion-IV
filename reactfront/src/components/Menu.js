@@ -527,7 +527,7 @@ myDiv === "Cuenta Corriente" &&
   {
 //HORAS ASISTENTE SOCIAL//
 myDiv === "Horas Asistente Social" && 
-  <div>
+  <div className='accordion'>
   <h6>En esta sección podrás realizar una reserva de hora con un/a asistente social donde se realizan las clases de tu carrera. Debes considerar que una reserva debe hacerse con 24 horas de antelación (de Lunes a Viernes) y sólo se podrá realizar una reserva cada 15 días a través de este medio. La atención será a través de videollamada, ya que se encuentran suspendidas las atenciones presenciales de forma indefinida</h6>
   <Accordion>
       <Accordion.Item eventKey="0">
@@ -562,24 +562,6 @@ myDiv === "Horas Asistente Social" &&
           <Dropdown.Item href="#/action-2">carrera 1</Dropdown.Item>
         </Dropdown.Menu>
       </Dropdown>
-      <h5>Datos de Reserva</h5>
-      <div>
-        <table className='calendario'>
-          <thead>
-            <tr>
-              <td>dia?</td>
-              <td></td>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Dato1</td>
-              <td>Dato2</td>
-            </tr>
-          </tbody>
-        </table>
-        </div> 
-        
       </Accordion.Body>
       </Accordion.Item>
       <br></br>
@@ -644,7 +626,7 @@ myDiv === "Documentos" &&
       </div>
       <div id='general'>
       <p class='font-style'>Formulario de Apelación para Causal de Eliminación</p>
-      <p class='except'>El formulacio debe ser completado y entregado de manera física en su carrera.</p>
+      <p class='except'>*El formulario debe ser completado y entregado de manera física en su carrera.</p>
       <Button href = 'https://estudiantes.uct.cl/certificados_firmas_digitales/documentos/formulario_apelacion.pdf' target="_blank" variant="warning" size="mm">
          Descargar
         </Button>
@@ -731,10 +713,12 @@ myDiv === "Información Personal" &&
   {
 //SOLICITUDES ESTUDIANTES//
 myDiv === "Solicitudes Estudiantes" && 
-  <div id='normal-div'>
-    <p>En esta sección encontrarás el formulario mediante el cual puedes
+  <div class='normal-div'>
+    <div className='accordion'>
+    <h6>En esta sección encontrarás el formulario mediante el cual puedes
       hacer una solicitud de Reincorporación, Suspensión o Renuncia. Además
-      puedes consultar el estado en que se encuentra tu solicitud.</p><br></br>
+      puedes consultar el estado en que se encuentra tu solicitud.</h6><br></br>
+      </div>
   <div id="danger-div">
     <h5 class='danger-tittle'>Proceso de suspensión<br></br>
     Beneficios de arancel MINEDUC 2022</h5><br></br>
@@ -757,6 +741,7 @@ myDiv === "Solicitudes Estudiantes" &&
     académicos. Se exime de esta obligación a los estudiantes que tengan FSCU.<br></br>
     <b>*EL PROCESOS DE SUSPENSIÓN ES DE EXCLUSIVA RESPONSABILIDAD DEL ESTUDIANTE*</b></p>
   </div>
+  <br></br>
   <br></br>
   <Accordion>
       <Accordion.Item eventKey="0">
