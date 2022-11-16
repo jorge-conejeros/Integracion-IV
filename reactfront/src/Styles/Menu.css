@@ -12,20 +12,20 @@
     border-radius: 8px;
 }
 
-/* Datos Biblioteca */
 .table_A {
     font-size: 16px;
     display: inline-block;
 }
 
 .table_A thead tr td {
-    background:#0575E6;
+    background:#004C80;
     height: 4vh;
     width: 25vh;
+    color: white;
 }
 
 .table_A tbody tr td{
-    background: white;
+    background: #0575E6;
     height: 8vh;
     width: 25vh;
 }
@@ -35,6 +35,8 @@
     display: inline-block;
     width: 90%;
 }
+
+
 
 .accordion h5 {
     font-family:'Times New Roman', Times, serif;
@@ -50,6 +52,7 @@
 .table_B {
     font-size: 16px;
     display: inline-block;
+    background: #0575E6;
 }
 
 .table_B thead tr td {
@@ -145,4 +148,16 @@
 .danger-tittle{
     font-style: oblique;
     font-size: larger;
+}
+
+
+.botoncitoMenu {
+    width: 90px;
+    height: 50px;
+    border-radius: 15px;
+    padding: 0;
+    position: absolute;
+    top: -60px;
+    left: -5px;
+
 }

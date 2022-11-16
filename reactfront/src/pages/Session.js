@@ -22,7 +22,7 @@ const Session = () => {
       <div className='welcome-container'>
         <h2>BIENVENIDO {name}</h2>
       </div>
-      <div className='banner-container'>
+      <div className='banner-container' id='laterales'>
         <Menu />
       </div>
       <div className='Contacto-container'>
