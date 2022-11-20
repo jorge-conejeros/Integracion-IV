@@ -6,7 +6,7 @@ import Button from 'react-bootstrap/Button';
 const Docum = () => {
     return (
       <div className='accordion'>
-      <p className="azul">Estimados/as estudiantes,<br></br>La Vicerrectoría Académica
+      <p className="azul" id='azulito'>Estimados/as estudiantes,<br></br>La Vicerrectoría Académica
       a través de la Dirección de Admisión y Registros Académicos en conjunto con
       la Dirección de Informática, tiene el agrado de comunicarles que contamos
       con un nuevo servicio de Firma Electrónica Avanzada, el cual permitirá brindarles

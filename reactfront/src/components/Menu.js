@@ -27,6 +27,7 @@ function cambia(){
     document.getElementById('btn-themeM').style.background="white";
     document.getElementById('btn-themeM').style.color="#021B79";
     document.getElementById('barrita').style.background="black";
+    document.getElementById('azulito').style.color="white";
     flag =1 ;
   }else{
     // A "Claro"
@@ -35,6 +36,7 @@ function cambia(){
     document.getElementById('btn-themeM').style.background="#021B79";
     document.getElementById('btn-themeM').style.color="white";
     document.getElementById('barrita').style.background="white";
+    document.getElementById('azulito').style.color="blue";
     flag = 0 ;
   }
 }
