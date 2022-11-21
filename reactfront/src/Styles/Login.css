@@ -1,0 +1,24 @@
+#rut {
+    text-align: center;
+}
+
+#password {
+    text-align: center;
+}
+
+.login{
+    float: left;
+}
+
+.advertencias {
+    float: right;
+    text-align: justify;
+    width: 500px;
+}
+
+.botoningresar {
+    height: 50px;
+    margin-top: 10px;
+    border-radius: 20px;
+    padding: 0;
+}

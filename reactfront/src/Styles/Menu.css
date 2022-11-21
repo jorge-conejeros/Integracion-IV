@@ -1,0 +1,163 @@
+.banner-container {
+    border-radius: 6px;
+    position: relative;
+    margin-top: 15px;
+    
+}
+.Info-container {
+    position: relative;
+    text-align: center;
+    background: wheat;
+    font-size: 30px;
+    border-radius: 8px;
+}
+
+.table_A {
+    font-size: 16px;
+    display: inline-block;
+}
+
+.table_A thead tr td {
+    background:#004C80;
+    height: 4vh;
+    width: 25vh;
+    color: white;
+}
+
+.table_A tbody tr td{
+    background: #0575E6;
+    height: 8vh;
+    width: 25vh;
+}
+
+/* Accordion */
+.accordion {
+    display: inline-block;
+    width: 90%;
+}
+
+
+
+.accordion h5 {
+    font-family:'Times New Roman', Times, serif;
+    font-size: 19px;
+}
+.accordion h6 {
+    font-family:'Times New Roman', Times, serif;
+    font-size: 19px;
+}
+
+/* Tablas Componentes */
+
+.table_B {
+    font-size: 16px;
+    display: inline-block;
+    background: #0575E6;
+}
+
+.table_B thead tr td {
+    background:#0575E6;
+    height: 4vh;
+    width: 40vh;
+    border-radius: 2px;
+}
+
+.table_B tbody tr td{
+    background: wheat;
+    height: 8vh;
+    border-radius: 2px;
+}
+
+.select h5 {
+    font-size: 18px;
+}
+
+.paginas_pag {
+    display:inline-block;
+}
+
+.img_web {
+    width: 50%;
+    height: 50%;
+}
+
+.img_info {
+    width: 10%;
+    height: 10%;
+}
+
+.tabla_info {
+    display:inline-block;
+    font-size: 20px;
+    border-radius: 6px;
+    background: rgba(21, 36, 241, 0.705);
+}
+
+.tabla_info tbody tr td{
+    height: 8vh;
+    width: 30vh;
+}
+
+/* CERTIFICADOS */
+
+#general{
+    border: #0575E6;
+    border-style: solid;
+    margin-top: 5px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+}
+.font-style{
+    font-size: large;
+    font-style: italic;
+}
+
+.azul{
+    border-style: solid;
+    border-color: #0000ff;
+    color: #0000ff;
+    font-size: 23px;
+}
+
+.rojo{
+    border-style: solid;
+    border-color: #ff0000;
+    color: #ff0000;
+    font-size: 23px;
+}
+.except{
+    font-size: medium;
+    font-style: italic;
+    color: #ff0000;
+    font-weight: bold;
+}
+/* SOLICITUDES ESTUDIANTES */
+
+#danger-div{
+    border-style: solid;
+    border-color: #2200ff;
+    border-radius: 7px;
+    width: 80%;
+    display:inline-table;
+}
+
+.danger-body{
+    font-size: medium;
+}
+
+.danger-tittle{
+    font-style: oblique;
+    font-size: larger;
+}
+
+
+.botoncitoMenu {
+    width: 90px;
+    height: 50px;
+    border-radius: 15px;
+    padding: 0;
+    position: absolute;
+    top: -60px;
+    left: -5px;
+
+}

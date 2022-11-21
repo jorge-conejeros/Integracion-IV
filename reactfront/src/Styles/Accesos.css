@@ -1,0 +1,27 @@
+.title-direct {
+    text-align: center;
+}
+
+#one-title {
+    color: rgb(255, 255, 255);
+    margin-top: 10px;
+}
+
+#galeria {
+    width: 150px;
+    height: 100px;
+    margin-left: 10px;
+    margin-top: 10px;
+    max-width: 100%;
+    border-radius: 15px;
+}
+
+.enlaces {
+    text-align: center;
+}
+
+.saltito {
+    background: white;
+    height: 5px;
+    border-radius: 15px;
+}

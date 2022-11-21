@@ -1,0 +1,14 @@
+/* Accordion */
+.accordion {
+    display: inline-block;
+    width: 90%;
+}
+
+.accordion h5 {
+    font-family:'Times New Roman', Times, serif;
+    font-size: 19px;
+}
+.accordion h6 {
+    font-family:'Times New Roman', Times, serif;
+    font-size: 19px;
+}

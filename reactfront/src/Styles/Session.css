@@ -1,0 +1,40 @@
+
+body{
+    background: #0575E6;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #021B79, #0575E6);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #021B79, #0575E6);
+}
+
+#laterales{
+    background: #0575E6;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #021B79, #0575E6);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #021B79, #0575E6);
+}
+
+/* La parte de arriba*/
+.nav-container {
+    text-align: center;
+    position: absolute;
+    margin-top: auto;
+}
+
+/* welcome*/
+.welcome-container {
+    position: relative;
+    text-align: center;
+    margin-top: 100px;
+    color: aliceblue;
+}
+
+.Contacto-container{
+    margin-top: 10px auto;
+}
+
+.Footer-container{
+    border-width: 10px;
+    border-color: white;
+}
